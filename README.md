@@ -7,7 +7,9 @@ setup
 config/dev.env
 
 PORT=3000
+
 MONGODB_URL={UrlToMongoDB}
+
 JWT_SECRET={whatevernameisok}
 
 enjoy
