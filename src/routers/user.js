@@ -86,7 +86,7 @@ router.patch('/user/me', auth, async (req, res) => {
     }
     res.send(req.user);
   } catch (e) {
-    res.status(400).send(e);
+    res.status(400).send();
   }
 });
 
@@ -100,7 +100,6 @@ router.delete('/user/me', auth, async (req, res) => {
     await req.user.remove();
     console.log("u delete ur self");
     res.send(req.user);
-    w
   } catch (e) {
     res.status(400).send(e);
   }
